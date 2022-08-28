@@ -1,25 +1,21 @@
-import logo from './logo.svg';
 import './App.css';
-
-function App() {
-  return (
+import City from './Components/City'
+function App(){
+  return(
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+      <City city="London" feature="beautiful"/>
+      <City city="New York" feature="fantastic"/>
+      <City city="Kathmandu" feature="majestic"/>
+      <City city="Beijing" feature="marvelous"/>
+
+      {
+      /* <p> Hello I am in London. Its a Beautiful.</p>
+      <p> Hello I am in New York. Its a fantastic.</p>
+      <p> Hello I am in Kathmandu. Its a majistic.</p>
+      <p> Hello I am in Beijing. Its a marvelous.</p> */ }
+
+      </div>
+  )
 }
 
 export default App;
